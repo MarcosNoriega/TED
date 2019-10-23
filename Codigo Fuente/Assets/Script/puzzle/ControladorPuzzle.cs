@@ -49,10 +49,6 @@ public class ControladorPuzzle : MonoBehaviour {
         panelError.active = false;
     }
 
-    public void SiguenteNivel()
-    {
-        SceneManager.LoadScene("modoPuzzle");
-    }
 
     public void loadScene(string scene)
     {

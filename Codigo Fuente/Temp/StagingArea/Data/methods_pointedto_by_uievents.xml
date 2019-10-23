@@ -1,0 +1,41 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="ControladorPuzzle">
+			<method name="loadScene"/>
+			<method name="loadScene"/>
+			<method name="Reitentar"/>
+			<method name="loadScene"/>
+			<method name="Terminar"/>
+			<method name="Reitentar"/>
+			<method name="loadScene"/>
+			<method name="Terminar"/>
+		</type>
+		<type fullname="Spawner">
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+			<method name="spawnear"/>
+		</type>
+	</assembly>
+</linker>

@@ -12,5 +12,8 @@ EditorBuildSettings:
     path: Assets/modoLibre.unity
     guid: 12182f4cf748c174bb76e3368cfd7bdb
   - enabled: 1
-    path: Assets/modoPuzzle.unity
+    path: Assets/ejercicio1.unity
     guid: d48447f7474a1234bb69d8cf6547aebf
+  - enabled: 1
+    path: Assets/ejercicio2.unity
+    guid: 50240a0600b5a324b8887f6efa88f62c
