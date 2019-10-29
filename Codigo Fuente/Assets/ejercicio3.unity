@@ -5925,6 +5925,7 @@ MonoBehaviour:
   - {fileID: 409088493}
   - {fileID: 1988376109}
   - {fileID: 966243860}
+  cables: []
   panelError: {fileID: 64102406}
   panelOk: {fileID: 506039952}
 --- !u!114 &1551246816

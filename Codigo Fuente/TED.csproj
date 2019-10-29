@@ -229,6 +229,7 @@
     <Compile Include="Assets\Script\preguntas\PreguntaUI.cs" />
     <Compile Include="Assets\Script\puzzle\Arrastrar.cs" />
     <Compile Include="Assets\Script\puzzle\Cable.cs" />
+    <Compile Include="Assets\Script\puzzle\CableNodo.cs" />
     <Compile Include="Assets\Script\puzzle\Componentes.cs" />
     <Compile Include="Assets\Script\puzzle\Conectar.cs" />
     <Compile Include="Assets\Script\puzzle\ControladorPuzzle.cs" />

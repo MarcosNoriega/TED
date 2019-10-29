@@ -8,6 +8,7 @@ public class ControladorPuzzle : MonoBehaviour {
 
     public static ControladorPuzzle instance;
     public Nodo[] nodos;
+    public CableNodo[] cables;
     public GameObject panelError;
     public GameObject panelOk;
 
@@ -42,6 +43,21 @@ public class ControladorPuzzle : MonoBehaviour {
         }
 
         panelOk.active = true;
+    }
+
+    public void comprobarNorma()
+    {
+        for (int i=0; i < cables.Length; i++)
+        {
+            if (!cables[i].esCorrecto())
+            {
+                panelError.active = true;
+                return;
+            }
+        }
+
+        panelOk.active = true;
+        return;
     }
 
     public void Reitentar()
