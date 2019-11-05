@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Eliminar : MonoBehaviour {
 
-    private void FixedUpdate()
+    /* private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.Mouse1))
         {
@@ -23,5 +23,51 @@ public class Eliminar : MonoBehaviour {
                 Destroy(gameObject);
             }
         }
+    }*/
+
+    public GameObject objetoAsignado;
+    public Transform center;
+    public Animator animator;
+
+    private void FixedUpdate()
+    {
+        bool c = Physics2D.OverlapBox(center.position, new Vector2(5.12f, 5.12f), 0f);
+        if (!Input.GetKey(KeyCode.Mouse0) && c && animator != null)
+        {
+            StartCoroutine(delete());
+        }
+
+        if (!Input.GetKey(KeyCode.Mouse0) && c && animator == null)
+        {
+            Destroy(objetoAsignado);
+        }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 9 || collision.gameObject.layer == 8)
+        {
+            objetoAsignado = collision.gameObject;
+            animator = objetoAsignado.GetComponent<Animator>();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject == objetoAsignado)
+        {
+            objetoAsignado = null;
+            animator = null;
+        }
+    }
+
+    private IEnumerator delete()
+    {
+        animator.SetTrigger("delete");
+        yield return new WaitForSeconds(1f);
+        Destroy(objetoAsignado);
+        objetoAsignado = null;
+        animator = null;
+    }
+
 }

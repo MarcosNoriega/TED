@@ -9,6 +9,7 @@ public class ControladorPuzzle : MonoBehaviour {
     public static ControladorPuzzle instance;
     public Nodo[] nodos;
     public CableNodo[] cables;
+    public Campos[] campos;
     public GameObject panelError;
     public GameObject panelOk;
 
@@ -56,18 +57,45 @@ public class ControladorPuzzle : MonoBehaviour {
             }
         }
 
-        panelOk.active = true;
+        panelOk.SetActive(true);
         return;
+    }
+
+    public void corregirTabla()
+    {
+        bool error = false;
+        for (int i=0; i < campos.Length; i++)
+        {
+            if (!campos[i].esCorrecto())
+            {
+                panelError.SetActive(true);
+                error = true;
+            }
+        }
+
+        if (!error)
+        {
+            panelOk.SetActive(true);
+
+        }
     }
 
     public void Reitentar()
     {
-        panelError.active = false;
+        panelError.SetActive(false);
     }
 
 
     public void loadScene(string scene)
     {
         SceneManager.LoadScene(scene);
+    }
+
+    public void quitarCorrecciones()
+    {
+        for (int i=0; i < campos.Length; i++)
+        {
+            campos[i].limpiarCorreccion();
+        }
     }
 }

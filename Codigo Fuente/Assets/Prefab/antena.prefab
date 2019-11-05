@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 114997287214433374}
   - component: {fileID: 114381288165457886}
   - component: {fileID: 61389497465326130}
+  - component: {fileID: 95899675198021076}
   m_Layer: 9
   m_Name: antena
   m_TagString: antena
@@ -336,6 +337,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.8}
   m_EdgeRadius: 0
+--- !u!95 &95899675198021076
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1522591700200246}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 315ae547f51d9dc4ebbc2c3904cbc40e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114012372753293098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -392,6 +410,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc06efb570d112248a10fe524bdf7ce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetoAsignado: {fileID: 0}
+  center: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &114863573258868806
 MonoBehaviour:
   m_ObjectHideFlags: 1

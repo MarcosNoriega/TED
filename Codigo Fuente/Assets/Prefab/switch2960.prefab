@@ -75,9 +75,9 @@ GameObject:
   - component: {fileID: 4283010864148288}
   - component: {fileID: 212815157636312524}
   - component: {fileID: 114658346486768820}
-  - component: {fileID: 114754248509417510}
   - component: {fileID: 61208725141515468}
   - component: {fileID: 50514277106854020}
+  - component: {fileID: 95160290185972312}
   m_Layer: 9
   m_Name: switch2960
   m_TagString: switch2960
@@ -357,6 +357,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.77, y: 0.37}
   m_EdgeRadius: 0
+--- !u!95 &95160290185972312
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952640108758586}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 315ae547f51d9dc4ebbc2c3904cbc40e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114258619892762340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -414,17 +431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   z: 0
---- !u!114 &114754248509417510
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1952640108758586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc06efb570d112248a10fe524bdf7ce4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114908317872684654
 MonoBehaviour:
   m_ObjectHideFlags: 1

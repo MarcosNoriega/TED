@@ -26,3 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/cableRed2.unity
     guid: ae16c3baa4574904085995dca2f5d57e
+  - enabled: 1
+    path: Assets/ejercicio4.unity
+    guid: a0d0553bd73bacd4593f73bee9740efb
+  - enabled: 1
+    path: Assets/editorEjercicios.unity
+    guid: 94cb8272e55774444ba873a07aba4278

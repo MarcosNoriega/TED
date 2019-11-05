@@ -220,7 +220,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Menu\FileManager.cs" />
+    <Compile Include="Assets\Script\Menu\Gif.cs" />
     <Compile Include="Assets\Script\Menu\Menu.cs" />
+    <Compile Include="Assets\Script\Menu\Transiciones.cs" />
     <Compile Include="Assets\Script\preguntas\Controlador.cs" />
     <Compile Include="Assets\Script\preguntas\DBPreguntas.cs" />
     <Compile Include="Assets\Script\preguntas\Opcion.cs" />
@@ -230,12 +233,16 @@
     <Compile Include="Assets\Script\puzzle\Arrastrar.cs" />
     <Compile Include="Assets\Script\puzzle\Cable.cs" />
     <Compile Include="Assets\Script\puzzle\CableNodo.cs" />
+    <Compile Include="Assets\Script\puzzle\Campos.cs" />
     <Compile Include="Assets\Script\puzzle\Componentes.cs" />
     <Compile Include="Assets\Script\puzzle\Conectar.cs" />
     <Compile Include="Assets\Script\puzzle\ControladorPuzzle.cs" />
     <Compile Include="Assets\Script\puzzle\Eliminar.cs" />
     <Compile Include="Assets\Script\puzzle\Nodo.cs" />
     <Compile Include="Assets\Script\puzzle\Spawner.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\unity simple ui\Textures and Sprites\SF UI\Background\LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
