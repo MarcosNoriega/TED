@@ -1043,7 +1043,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PEDNWK
+  m_Text: REDTEC
 --- !u!222 &675692511
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1256,6 +1256,10 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795222701176450, guid: 1bbedcf986b57004cb3ed59f9cb9da65, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bbedcf986b57004cb3ed59f9cb9da65, type: 2}
